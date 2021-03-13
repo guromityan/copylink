@@ -13,6 +13,6 @@ Keyboard shortcuts are set when importing.
 | OS         | Cpy URL (Markdown format) | Copy page title  |
 | ---------- | ------------------------- | ---------------- |
 | Mac        | cmd + K                   | cmd + shift + K  |
-| Windows    | ctrl + K                  | ctrl + Shift + K |
-| Chromebook | ctrl + K                  | ctrl + Shift + K |
+| Windows    | ctrl + K                  | ctrl + shift + K |
+| Chromebook | ctrl + K                  | ctrl + shift + K |
 
