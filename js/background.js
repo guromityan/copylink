@@ -18,6 +18,23 @@ chrome.commands.onCommand.addListener((cmd) => {
   });
 });
 
+chrome.contextMenus.create({
+  title: "copylink MD format",
+  contexts: ["image"],
+  type: "normal",
+  onclick: (clicked) => {
+    if (clicked.srcUrl === "") {
+      return;
+    }
+    let url = new URL(clicked.srcUrl);
+    let imgPath = url.origin + url.pathname;
+    let imgName = url.pathname.substring(url.pathname.lastIndexOf("/") + 1);
+    let mdFormatLink = `![${imgName}](${imgPath})`;
+    copyToClipboard(mdFormatLink);
+    return;
+  },
+});
+
 function copyToClipboard(value) {
   let copyForm = document.createElement("textarea");
   copyForm.textContent = value;

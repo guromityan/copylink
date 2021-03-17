@@ -26,5 +26,8 @@
       "description": "copy title to clipboad."
     }
   },
-  "permissions": ["tabs"]
+  "permissions": [
+    "tabs",
+    "contextMenus"
+  ]
 }
